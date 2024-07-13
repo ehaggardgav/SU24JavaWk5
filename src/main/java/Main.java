@@ -65,7 +65,7 @@ public class Main {
         low = arr[i];
       }
     }
-    return low
+    return low;
   }
 
 /*
