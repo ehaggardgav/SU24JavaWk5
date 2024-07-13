@@ -10,8 +10,8 @@ public class Main {
     //set HW5arr equal to arr
     int[] arr = HW5arr;
     print(arr);
-    System.out.println(sum(arr));
-    System.out.println(average(arr));
+    System.out.println("sum: " + sum(arr));
+    System.out.println("average: " + average(arr));
     
   } 
    
