@@ -13,6 +13,7 @@ public class Main {
     System.out.println("sum: " + sum(arr));
     System.out.println("average: " + average(arr));
     System.out.println("max: " + max(arr));
+    System.out.println("min: " + min(arr));
     
   } 
    
@@ -56,7 +57,16 @@ public class Main {
     return high;
   }
 
-  
+  //define 'min' function
+  public static int min(int[] arr) {
+    int low = arr[0];
+    for (int i=0; i <arr.length; i++) {
+      if (arr[i] < low) {
+        low = arr[i];
+      }
+    }
+    return low
+  }
 
 /*
   int lowNumber = arr[0];
