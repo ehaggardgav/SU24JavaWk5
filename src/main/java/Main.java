@@ -12,6 +12,7 @@ public class Main {
     print(arr);
     System.out.println("sum: " + sum(arr));
     System.out.println("average: " + average(arr));
+    System.out.println("max: " + max(arr));
     
   } 
    
@@ -43,6 +44,28 @@ public class Main {
     int sum = sum(arr);
     return (float) sum / arr.length;
   }
+
+  //define 'max' function
+  public static int max(int[] arr) {
+    int high = arr[0];
+    for (int i=0; i <arr.length; i++) {
+      if (arr[i] > high) {
+        high = arr[i];
+      }
+    }
+    return high;
+  }
+
+  
+
+/*
+  int lowNumber = arr[0];
+  for(int i = 1; i <arr.length; i++) {
+    if (arr[i] < lowNumber) {
+     lowNumber = arr[i]; 
+    }
+  }
+*/
   
 }
 
