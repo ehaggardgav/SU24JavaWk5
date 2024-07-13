@@ -10,6 +10,7 @@ public class Main {
     //set HW5arr equal to arr
     int[] arr = HW5arr;
     print(arr);
+    System.out.println(sum(arr));
     
   } 
    
@@ -20,11 +21,24 @@ public class Main {
         System.out.print(arr[i] + ", ");
       } else {
         System.out.print(arr[i]);
+        System.out.println();
       }
       
 
       }
     }
+
+  //define sum function
+  public static int sum(int[] arr) {
+    int input = 0;
+    for (int i=0; i <arr.length; i++) {
+      input = input + arr[i];
+      System.out.println(input);
+    }
+    return input;
   }
+
+  
+}
 
   
