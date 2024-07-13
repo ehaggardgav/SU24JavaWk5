@@ -11,10 +11,11 @@ public class Main {
     int[] arr = HW5arr;
     print(arr);
     System.out.println(sum(arr));
+    System.out.println(average(arr));
     
   } 
    
-  //define print function
+  //define 'print' function
   public static void print(int[] arr) {
     for (int i = 0; i <arr.length; i++) {
       if (i <arr.length -1) {
@@ -28,16 +29,20 @@ public class Main {
       }
     }
 
-  //define sum function
+  //define 'sum' function
   public static int sum(int[] arr) {
     int input = 0;
     for (int i=0; i <arr.length; i++) {
-      input = input + arr[i];
+      input += arr[i];
     }
-    return input;
-    
+    return input; 
   }
 
+  //define 'average' function
+  public static float average(int[] arr) {
+    int sum = sum(arr);
+    return (float) sum / arr.length;
+  }
   
 }
 
