@@ -33,9 +33,9 @@ public class Main {
     int input = 0;
     for (int i=0; i <arr.length; i++) {
       input = input + arr[i];
-      System.out.println(input);
     }
     return input;
+    
   }
 
   
