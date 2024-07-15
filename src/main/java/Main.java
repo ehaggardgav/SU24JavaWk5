@@ -9,6 +9,7 @@ public class Main {
 
     //set HW5arr equal to arr
     int[] arr = HW5arr;
+    System.out.print("HW5arr: ");
     print(arr);
     System.out.println("sum: " + sum(arr));
     System.out.println("average: " + average(arr));
@@ -16,8 +17,12 @@ public class Main {
     System.out.println("min: " + min(arr));
     sort(arr);
     System.out.print("sorted: ");
-    for (int i : arr) {
-        System.out.print(i + " ");
+    for (int i=0 ; i <arr.length; i++) {
+      if (i <arr.length -1) {
+        System.out.print(arr[i] + ", ");
+      } else {
+        System.out.print(arr[i]);
+      }
     }
     
   } 
