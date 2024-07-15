@@ -14,6 +14,11 @@ public class Main {
     System.out.println("average: " + average(arr));
     System.out.println("max: " + max(arr));
     System.out.println("min: " + min(arr));
+    sort(arr);
+    System.out.print("sorted: ");
+    for (int i : arr) {
+        System.out.print(i + " ");
+    }
     
   } 
    
@@ -68,14 +73,21 @@ public class Main {
     return low;
   }
 
-/*
-  int lowNumber = arr[0];
-  for(int i = 1; i <arr.length; i++) {
-    if (arr[i] < lowNumber) {
-     lowNumber = arr[i]; 
-    }
+  //define 'sort' function
+  public static void sort(int[] arr) {
+      int n = arr.length;
+      for (int i = 1; i < n; ++i) {
+          int place = arr[i];
+          int j = i - 1;
+          while (j >= 0 && arr[j] > place) {
+              arr[j + 1] = arr[j];
+              j = j - 1;
+          }
+          arr[j + 1] = place;
+      }
   }
-*/
+  
+
   
 }
 
